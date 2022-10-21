@@ -65,19 +65,19 @@
             </p>
             <table>
                 <tr>
-                    <td>COMBO PHÒNG KHÁCH</td>
-                    <td>SOFA</td>
-                    <td>GHẾ ĐÔN, GHẾ BĂNG</td>
-                    <td>KỆ, TỦ TV</td>
+                    <td><a href="#">COMBO PHÒNG KHÁCH</a></td>
+                    <td><a href="#">SOFA</a></td>
+                    <td><a href="#">GHẾ ĐÔN, GHẾ BĂNG</a></td>
+                    <td><a href="#">KỆ, TỦ TV</a></td>
                 </tr>
                 <tr>
-                    <td>ĐỒNG HỒ</td>
-                    <td>TRANH ẢNH</td>
-                    <td>GỐI TRANG TRÍ</td>
-                    <td>ĐÈN SÀN</td>
+                    <td><a href="#">ĐỒNG HỒ</a></td>
+                    <td><a href="#">TRANH ẢNH</a></td>
+                    <td><a href="#">GỐI TRANG TRÍ</a></td>
+                    <td><a href="#">ĐÈN SÀN</a></td>
                 </tr>
                 <tr>
-                    <td>KỆ, TỦ GIÀY</td>
+                    <td><a href="#">KỆ, TỦ GIÀY</a></td>
                 </tr>
             </table>
         </div>
@@ -85,23 +85,396 @@
             <h1 class="text-center">PHÒNG KHÁCH - Living Room</h1>
             <img src="../assets/Living_Room_img/slider.webp" alt="">
         </div>
-        <div class="list-products">
+        
             <div class="filter">
-               <div class="main-filter">
-                <ul>
-                    <li>
-                        <select name="" id="">
-                            <option value=""><i>Giá</i></option>
-                        </select>
-                    </li>
-                    <li>Màu sắc <i class="ti-plus"></i></li>
-                    <li>Loại sản phẩm <i class="ti-plus"></i></li>
-                </ul>
+                <div class="main-filter">
+                    <div class="filter-block price-js">
+                         <div class="filter-item price-filter">
+                             <span class="title-filter ">
+                                 Giá
+                                 <i class="ti-plus"></i>
+                             </span>
+                             <ul class="price-choice choice">
+                                <li>
+                                    <input type="radio" name="price-choice"  id="1">
+                                    <label for="1">Dưới 1 triệu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price-choice" id="1-2">
+                                    <label for="1-2">Từ 1 - 2 triệu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price-choice" id="2-3">
+                                    <label for="2-3">Từ 2 - 3 triệu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price-choice" id="3-5">
+                                    <label for="3-5">Từ 3 - 5 triệu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price-choice" id="5">
+                                    <label for="5">Lớn hơn 5 triệu</label>
+                                </li>
+                             </ul>
+                         </div>
+                    </div>
+     
+                    <div class="filter-block color-js">
+                          <div class="filter-item">
+                             <span class="title-filter">
+                                 Màu sắc
+                                 <i class="ti-plus"></i>
+                             </span>
+                             <ul class="color-choice choice">
+                                <li>
+                                    <input type="radio" name="filter-color" id="xanh">
+                                    <label for="xanh">Xanh ciment</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="nau">
+                                    <label for="nau">Nâu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="trang">
+                                    <label for="trang">Trắng</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="be">
+                                    <label for="be">Be</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="xam">
+                                    <label for="xam">Xám</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="den">
+                                    <label for="den">Đen</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="do">
+                                    <label for="do">Đỏ</label>
+                                </li>
+                             </ul>
+                     </div>
+                    </div>
+     
+                    <div class="filter-block type-js">
+                         <div class="filter-item">
+                             <span class="title-filter">
+                                 Loại sản phẩm
+                                 <i class="ti-plus"></i>
+                             </span>
+                             <ul class="type-choice choice">
+                                <li>
+                                    <input type="radio" name="categories" id="khac">
+                                    <label for="khac">Khác</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="ke">
+                                    <label for="ke">Kệ</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="sofa">
+                                   <label for="sofa">Sofa</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="tranh">
+                                    <label for="tranh">Tranh</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="desk">
+                                    <label for="desk">Desk</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="categories" id="ghe">
+                                    <label for="ghe">Ghế</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="ban">
+                                    <label for="ban">Bàn</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="den">
+                                    <label for="den">Đèn</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="trangtri">
+                                    <label for="trangtri">Trang trí</label>
+                                </li>
+                                
+                             </ul>
+                         </div>
+                    </div>
+                </div>
+
+
+               <div class="sort">
+                    <span class="amount-items">300 sản phẩm</span>
+                    <select name="" id="" class="sort-by">
+                        <option value="" selected>Sort by</option>
+                        <option value="">Mới nhất</option>
+                        <option value="">Giá tăng dần</option>
+                        <option value="">Giá giảm dần</option>
+                        <option value="">Tên: A - Z</option>
+                        <option value="">Tên: Z - A</option>
+                    </select>
                </div>
-               <div class="sort"></div>
             </div>
-        </div>
+
+            
+<!-- grid items -->
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                       <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                       <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                       <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+            </div>
     </div>
+    <script src="../javascript/page_rooms.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
