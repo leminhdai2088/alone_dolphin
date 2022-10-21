@@ -81,11 +81,11 @@ body{
     padding-right: 20px;
 }
 
-.ti-plus{
+.title-filter i{
     margin-left: 4px;
 }
 
-.price-filter .ti-plus{
+.price-filter i{
     margin-left: 24px;
 }
 
@@ -147,3 +147,7 @@ body{
   .price-item{
     font-size: 20px;
   }
+
+
+  /* footer */
+ 
