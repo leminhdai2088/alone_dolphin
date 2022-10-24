@@ -1,3 +1,6 @@
+
+
+// xử lý filter
 const btnPrice = document.querySelector('.price-js');
 const btnColor = document.querySelector('.color-js');
 const btnType = document.querySelector('.type-js');
@@ -65,6 +68,7 @@ document.addEventListener(
     },
     false
   )
+
 
 
 
