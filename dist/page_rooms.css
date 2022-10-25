@@ -231,7 +231,7 @@ body{
     color: rgba(255,255,255,0.7);
 }
 
-.sub-menu li:hover .details-menu{
+.sub-menu a:hover+.details-menu{
     display: block;
 }
 
