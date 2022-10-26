@@ -1,0 +1,138 @@
+*{ margin: 0; padding: 0;}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("D:Extract-site\Montserrat-Light.otf");
+}
+body{
+
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
+
+}
+/* body:before, body:after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    top: 0;
+    left: 0;
+} */
+.main-content{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+    outline: none !important;
+    background-color: #fff;
+    color: #545454;
+}
+.background-image-heading{
+    position: relative;
+    top: 0;
+    background-image: url(../assets/img_page_intro/header_bg.webp);
+    background-repeat: repeat;
+    background-size: auto;
+    width: 100%;
+    min-height: 273px;
+    background-position: center;
+}
+.header-background-info > h2 {
+    position: absolute;
+    bottom: 47px;
+    left: 168px;
+}
+.noidung{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.col-md-8 {
+    margin-left: 30px;
+    flex:2;
+}
+.col-md-8 ._about p{
+    text-align: justify;
+    margin: 10px 0;
+}
+.col-md-4 {
+    flex: 1;
+}
+img {
+    max-width: 100%;
+    height: 100%;
+}
+::selection {
+    color: #fff;
+    background: #a8a88f;
+}
+.parallax{
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/img_page_intro/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.iconbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 85px;
+}
+.iconbox .iconbox-title .icon{
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.iconbox .iconbox-title {
+    width: 30%;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+.nr_line{
+    border-width: 1px 0 0px;
+    margin: 35px auto;
+    width: 100%;
+    display: inline-block;
+    border-style: solid;
+    color: #eee;
+}
+.title-ourteam{
+    text-align: center;
+    margin: 40px 0;
+}
+.ourteam {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+.ourteam .nr-ourteams{
+    width: 31%;
+}
+.ourteam .nr-ourteams figure{
+    overflow: hidden;
+}
+.ourteam .nr-ourteams figure img{
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    transform: scale(1);
+}
+.ourteam .nr-ourteams:hover figure img{
+    transform: scale(1.1);
+}
+.ourteam .nr-ourteams .ourteams-text,
+.ourteam .nr-ourteams .ourteams-text > p{
+    margin: 30px 0;
+}
