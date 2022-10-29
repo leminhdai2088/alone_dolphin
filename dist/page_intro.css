@@ -1,19 +1,24 @@
-*{ margin: 0; padding: 0;}
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
 body,html{
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
-@font-face {
+/* @font-face {
     font-family: Montserrat;
     src: url("D:Extract-site\Montserrat-Light.otf");
-}
+} */
 body{
-
-    font-family: Montserrat, sans-serif;
+    font-family: segoe ui;
     overflow-x: hidden;
-
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
 }
-/* body:before, body:after {
+body:before, body:after {
     content: "";
     position: fixed;
     width: 100%;
@@ -21,26 +26,50 @@ body{
     background: #fff;
     top: 0;
     left: 0;
-} */
+}
+/* header */
+header{
+    background-color: #fff;
+}
+/* main */
+
 .main-content{
+    
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    /* font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.25px; */
     outline: none !important;
     background-color: #fff;
     color: #545454;
 }
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+h4{
+    font-size: 25px;
+    font-weight: bold;
+}
 .background-image-heading{
     position: relative;
-    top: 0;
+    top: 64px;
     background-image: url(../assets/img_page_intro/header_bg.webp);
     background-repeat: repeat;
     background-size: auto;
     width: 100%;
     min-height: 273px;
     background-position: center;
+    margin-bottom: 64px;
 }
 .header-background-info > h2 {
     position: absolute;
@@ -132,7 +161,81 @@ img {
 .ourteam .nr-ourteams:hover figure img{
     transform: scale(1.1);
 }
-.ourteam .nr-ourteams .ourteams-text,
-.ourteam .nr-ourteams .ourteams-text > p{
+.ourteam .nr-ourteams .ourteams-text{
     margin: 30px 0;
+}
+.section-iconboxes-contact{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.ts-address .list-info{
+    padding-left: 0px;
+}
+.ts-time .list-info{
+    list-style-type: square;
+    padding-left: 16px;
+}
+.contact-info{
+    flex: 1;
+    margin-right: 60px;
+}
+.contact-map{
+    flex: 2;
+}
+.share-you-moment{
+    display: flex;
+    zoom: 1;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.col-sm-9{
+    flex: 2;
+}
+.col-sm-3{
+    flex: 1;
+}
+.col-sm-3 h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #676767;
+    text-align: center;
+    width: 100%;
+    margin: 100px 0;
+}
+.owl-stage-outer{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+    width: 900px;
+    margin-left: 20px;
+}
+.no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+#img-container{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    overflow: hidden;
+}
+#img-container img{
+    /* margin-left: 10px;   */
+    object-fit: cover;
+}
+
+.owl-prev, .owl-next{
+    cursor: pointer;
+    user-select: none;
+    width: 30px;
+    height: 30px;
+    color: #a5a0a0;
+    font-size: 30px;
+}
+/* footer */
+footer{
+    z-index: 99;
 }
