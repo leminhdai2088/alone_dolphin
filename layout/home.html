@@ -15,9 +15,20 @@
         type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
       />
+
+      <!-- nivo slider -->
+      <link rel="stylesheet" href="../dist/page_home/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+      <link rel="stylesheet" href="../dist/page_home/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+      
   </head>
 <body>
     <!-- Slideshow container -->
+    <div id="slider" class="nivoSlider"> 
+      <img src="../dist/page_home/nivo-slider/demo/images/toystory.jpg" data-thumb="images/toystory.jpg" alt="" /> 
+      <img src="../dist/page_home/nivo-slider/demo/images/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" />
+      <img src="../dist/page_home/nivo-slider/demo/images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" /> 
+      <img src="../dist/page_home/nivo-slider/demo/images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" /> 
+      </div>
 
 <div class="slideshow-content-1 container-fluid">
     <div class="image-slider-0 row">
@@ -269,4 +280,13 @@
   src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 ></script>
 <script src="../javascript/page_home.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="../dist/page_home/nivo-slider/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+        $(window).load(function() {
+        $('#slider').nivoSlider();
+        });
+</script>
+
 </html>
