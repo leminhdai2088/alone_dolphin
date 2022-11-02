@@ -59,6 +59,10 @@ $(document).ready(function(){
     });
   });
   $(window).load(function() {
-    $('#slider').nivoSlider();
+    $('#slider').nivoSlider({
+        pauseTime: 2000,
+        prevText:'<ion-icon class="nivo-arrow" name="chevron-back-outline"></ion-icon>',
+        nextText:'<ion-icon class="nivo-arrow" name="chevron-forward-outline"></ion-icon>',
+    });
     });
   
