@@ -203,13 +203,12 @@ img {
     color: #676767;
     text-align: center;
     width: 100%;
-    margin: 100px 0;
+    padding: 97px 0;
 }
 .owl-stage-outer{
     display: flex;
     align-items: center;
     overflow: hidden;
-    transition: all 0.25s ease 0s;
     width: 900px;
     margin-left: 20px;
 }
@@ -222,11 +221,13 @@ img {
     display: flex;
     overflow: hidden;
 }
+.image-slider-2{
+    cursor: grab;
+}
 #img-container img{
-    /* margin-left: 10px;   */
+    margin: 0 5px;
     object-fit: cover;
 }
-
 .owl-prev, .owl-next{
     cursor: pointer;
     user-select: none;
