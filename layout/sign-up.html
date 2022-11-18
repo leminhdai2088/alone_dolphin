@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../main.css" />
+    <link href="/dist/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #background-pattern {
+            height: 150px;
+            width: 1200px;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 5px 8px;
+            border-radius: 0;
+            border: 2px solid rgb(113, 113, 113);
+            margin: 5px 0;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            border-radius: 0;
+            outline: none;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body class="w-[1200px] m-auto text-gray-700">
+    <div class="">
+        <img src="../assets/background-pattern.jpg" alt="pattern" id="background-pattern">
+    </div>
+    <div class="w-1/2 m-auto">
+        <h1 class="text-4xl text-center font-semibold my-5">Đăng ký</h1>
+        <form>
+            <div>
+                <label for="full-name">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
+                <input type="text" id="fname" name="full-name" required>
+            </div>
+            <div class="mt-8">
+                <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="mt-8">
+                <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="mt-8">
+                <label for="confirm-password">Xác nhận mật khẩu</label><span><sup
+                        class="text-red-500">*</sup></span><br>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+        </form>
+        <div class="mt-8">
+            <a href="sign-in.html">Đã có tài khoản? Đăng nhập tại đây</a>
+        </div>
+        <div class="flex justify-center mt-8">
+            <input type="submit" value="Tạo tài khoản"
+                class="px-5 py-2 bg-[#ffde59] text-black text-xl cursor-pointer m-auto">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
