@@ -69,7 +69,7 @@
     padding: 0 20px;
 }
 .image-item-1 h4{
-    font-size: 18px;
+    font-size: 22px;
     color: #676767;
     margin-top: 10px;
     margin-bottom: 0;
@@ -207,7 +207,7 @@ button{
     vertical-align: middle;
     align-items: center;
     justify-content: center;
-    padding: 67px 0;
+    padding: 102px 0;
 }
 .chiasekhoanhkhac .share-title h3{
     font-weight: bold;
@@ -220,7 +220,7 @@ button{
     text-align: left;
 }
 .slideshow-content-1 p{
-    font-size: 13px;
+    font-size: 18px;
     margin-top: 10px;
     display: block;
     font-weight: 500;
