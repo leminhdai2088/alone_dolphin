@@ -237,6 +237,11 @@ img {
     font-size: 30px;
 }
 /* footer */
-footer{
+/* footer{
     z-index: 99;
-}
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    bottom: 0px;
+    left: 0px;
+} */
