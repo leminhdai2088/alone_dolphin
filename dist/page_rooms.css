@@ -5,13 +5,10 @@
     
 }
 
+
+
 .opacity-8{
     opacity: 0.8;
-}
-
-
-body{ 
-    height: 3000px;
 }
 
 .text-center{
@@ -147,6 +144,38 @@ body{
   /* sub nav */
 
 
-
+/* share */
+.share-you-moment{
+    margin-top: 46px;
+}
   /* footer */
- 
+
+
+  @media(min-width: 740px) and (max-width:1023px){
+    body{
+        padding-left: 46px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .nav-room {
+        font-size: 24px;
+    }
+
+    .filter{
+        font-size: 24px;
+    }
+    .name-item {
+        font-size: 26px;
+    }
+
+    .desc-item{
+        font-size: 24px;
+    }
+
+    .price-item{
+        font-size: 26px;
+    }
+  }
