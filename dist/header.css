@@ -108,20 +108,31 @@
     background-color:white;
 }
 @media(min-width: 740px) and (max-width:1023px){
-    .logo{
-        margin-left: 46px;
-    }
-
-    .right-header{
-        margin-right: 46px;
-    }
 
     .header{
-        font-size: 24px;
+        font-size: 18px;
         padding: 20px 0;
+        height: auto !important;
     }
 
     .right-header input{
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    .right-header div:first-child{
+        min-width: 200px;
+    }
+
+
+    .gap-10{
+        gap: 18px !important;
+    }
+
+    .m-header{
+        flex-wrap: wrap;
+    }
+
+    .header div:first-child{
+        justify-content: space-around ;
     }
  }

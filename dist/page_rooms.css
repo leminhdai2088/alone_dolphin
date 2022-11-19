@@ -17,7 +17,7 @@
 
 
 .main{
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
 
 .nav-room{
@@ -147,6 +147,7 @@
 /* share */
 .share-you-moment{
     margin-top: 46px;
+    overflow: hidden;
 }
   /* footer */
 
@@ -156,26 +157,43 @@
         padding-left: 46px;
     }
 
+    .w-\[1200px\] {
+        width: auto;
+    }
+
     .grid-container {
         grid-template-columns: auto auto auto;
     }
 
     .nav-room {
-        font-size: 24px;
+        font-size: 18px;
+    }
+
+    .slider h1 {
+        font-size: 28px;
     }
 
     .filter{
-        font-size: 24px;
+        font-size: 16px;
     }
     .name-item {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .desc-item{
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .price-item{
-        font-size: 26px;
+        font-size: 20px;
     }
+
+    .filter-block {
+        margin-right: 18px;
+    }
+
+.share-you-moment{
+    margin-bottom: 0;
+}
+
   }
