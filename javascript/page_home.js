@@ -30,11 +30,20 @@ $(document).ready(function(){
         nextArrow:`<button type='button' class='slick-next slick-arrow'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
         responsive:[
             {
-                breakpoint: 1025,
+                breakpoint: 1024,
                 settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
+                slidesToScroll: 3
                     }
             },
+            {
+                breakpoint: 740,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+                    }
+            },
+            
         ]
     });
   });

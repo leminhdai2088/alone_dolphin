@@ -111,45 +111,33 @@ document.addEventListener(
 
 $(document).ready(function(){
   $('.image-slider-2').slick({
-      dots: false,
-      arrows: true,
       slidesToShow: 4,
       slidesToScroll: 4,
       infinite: true, //false: khong vo tan
       // autoplay: true,
       // autoplaySpeed: 2000,
       draggable: true, //keo tha
-      prevArrow:  $(".owl-prev"),
-      nextArrow: $(".owl-next"),
+      prevArrow:`<button type='button' class='slick-prev slick-arrow'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
+      nextArrow:`<button type='button' class='slick-next slick-arrow'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
       responsive:[
           {
-              breakpoint: 1200,
+              breakpoint: 1024,
               settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '30px',
-                  slidesToShow: 4,    
-              },
+              slidesToShow: 3,
+              slidesToScroll: 3
+                  }
+          },
+          {
               breakpoint: 740,
               settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '30px',
-                  slidesToShow: 3,    
-              },
-              breakpoint: 739,
-              settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '30px',
-                  slidesToShow: 2,    
-              },
+              slidesToShow: 2,
+              slidesToScroll: 2
+                  }
           },
+          
       ]
   });
 });
-
-
 
 
 
