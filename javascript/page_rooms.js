@@ -1,4 +1,4 @@
-
+const $ = document.querySelector.bind(document);
 
 // xử lý filter
 const btnPrice = document.querySelector('.price-js');
@@ -68,6 +68,24 @@ document.addEventListener(
     },
     false
   )
+
+
+var price = $('.price-filter .title-filter');
+
+
+var filterPrice =document.querySelectorAll('.price-choice input');
+for(var i of filterPrice){
+  i.onclick= function(e){
+    price.innerText = e.target.value;
+  }
+}
+
+
+
+
+
+
+
 
 
 

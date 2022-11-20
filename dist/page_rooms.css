@@ -149,12 +149,23 @@
     margin-top: 46px;
     overflow: hidden;
 }
-  /* footer */
+
+
+
+
+
 
 
   @media(min-width: 740px) and (max-width:1023px){
     body{
         padding-left: 46px;
+    }
+
+    .lim-ch{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 15ch;
     }
 
     .w-\[1200px\] {
@@ -192,7 +203,7 @@
         margin-right: 18px;
     }
 
-.share-you-moment{
+    .share-you-moment{
     margin-bottom: 0;
 }
 
