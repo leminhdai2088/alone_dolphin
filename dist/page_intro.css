@@ -212,10 +212,10 @@ img {
     width: 900px;
     margin-left: 20px;
 }
-.no-scrollbar::-webkit-scrollbar{
+/* .no-scrollbar::-webkit-scrollbar{
     display: none;
-}
-#img-container{
+} */
+.img-container{
     margin-left: 0;
     margin-right: 0;
     display: flex;
@@ -223,9 +223,9 @@ img {
 }
 .image-slider-2{
     cursor: grab;
-}
-#img-container img{
     margin: 0 5px;
+}
+.img-container .image-slider-2 img{
     object-fit: cover;
 }
 .owl-prev, .owl-next{
