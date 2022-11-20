@@ -90,7 +90,7 @@
     min-width: 200px;
     padding: 8px;
     background: #fff;
-    z-index: 99;
+    z-index: 0;
     border: 0;
     box-shadow: 0 5px 5px 1px rgb(0 0 0 / 12%), 0 2px 2px 1px rgb(0 0 0 / 11%);
     list-style: none;

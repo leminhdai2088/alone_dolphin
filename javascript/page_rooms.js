@@ -69,23 +69,41 @@ document.addEventListener(
     false
   )
 
-
-var price = $('.price-filter .title-filter');
-
-
-var filterPrice =document.querySelectorAll('.price-choice input');
-for(var i of filterPrice){
-  i.onclick= function(e){
-    price.innerText = e.target.value;
-  }
-}
+// lọc giá tiền
+// var price = $('.price-filter .title-filter');
 
 
+// var filterPrice =document.querySelectorAll('.price-choice input');
+// for(var i of filterPrice){
+//   i.onclick= function(e){
+//     price.innerText = e.target.value;
+//   }
+// }
+
+// // lọc màu sắc
 
 
+// var color = $('.color-js .title-filter');
 
 
+// var filterColor =document.querySelectorAll('.color-choice input');
+// for(var i of filterColor){
+//   i.onclick= function(e){
+//     color.innerText = e.target.value;
+//   }
+// }
 
+// // lọc loại sản phẩm
+
+// var type = $('.type-js .title-filter');
+
+
+// var filterType =document.querySelectorAll('.type-choice input');
+// for(var i of filterType){
+//   i.onclick= function(e){
+//     type.innerText = e.target.value;
+//   }
+// }
 
 
 
