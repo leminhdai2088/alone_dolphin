@@ -21,3 +21,18 @@
       font-size: 20px;
    }
  }
+
+ @media (max-width: 739px){
+   .footer>div{
+      display: block;
+  }
+
+  .footer-item+.footer-item{
+      margin-top: 32px;
+  
+  }
+
+  .footer-text {
+      margin: 10px;
+  }
+ }
