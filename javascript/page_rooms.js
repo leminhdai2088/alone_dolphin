@@ -1,4 +1,4 @@
-const $ = document.querySelector.bind(document);
+
 
 // xử lý filter
 const btnPrice = document.querySelector('.price-js');
@@ -108,6 +108,7 @@ document.addEventListener(
 
 
 // slider
+
 $(document).ready(function(){
   $('.image-slider-2').slick({
       dots: false,
@@ -127,21 +128,21 @@ $(document).ready(function(){
                   arrows: false,
                   centerMode: true,
                   centerPadding: '30px',
-                  lidesToShow: 4,    
+                  slidesToShow: 4,    
               },
-              breakpoint: 600,
+              breakpoint: 740,
               settings: {
                   arrows: false,
                   centerMode: true,
                   centerPadding: '30px',
-                  lidesToShow: 3,    
+                  slidesToShow: 3,    
               },
-              breakpoint: 0,
+              breakpoint: 739,
               settings: {
                   arrows: false,
                   centerMode: true,
                   centerPadding: '30px',
-                  lidesToShow: 2,    
+                  slidesToShow: 2,    
               },
           },
       ]
