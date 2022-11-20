@@ -11,6 +11,10 @@
     opacity: 0.6;
  }
 
+ .head-footer{
+   font-weight: bold !important;
+ }
+
 /* tab */
  @media(min-width: 740px) and (max-width:1023px){
    .head-footer{

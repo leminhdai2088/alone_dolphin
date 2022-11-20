@@ -1,4 +1,4 @@
-const $ = document.querySelector.bind(document);
+
 
 // xử lý filter
 const btnPrice = document.querySelector('.price-js');
@@ -108,47 +108,36 @@ document.addEventListener(
 
 
 // slider
+
 $(document).ready(function(){
   $('.image-slider-2').slick({
-      dots: false,
-      arrows: true,
       slidesToShow: 4,
       slidesToScroll: 4,
       infinite: true, //false: khong vo tan
       // autoplay: true,
       // autoplaySpeed: 2000,
       draggable: true, //keo tha
-      prevArrow:  $(".owl-prev"),
-      nextArrow: $(".owl-next"),
+      prevArrow:`<button type='button' class='slick-prev slick-arrow'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
+      nextArrow:`<button type='button' class='slick-next slick-arrow'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
       responsive:[
           {
-              breakpoint: 1200,
+              breakpoint: 1024,
               settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '30px',
-                  lidesToShow: 4,    
-              },
-              breakpoint: 600,
-              settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '30px',
-                  lidesToShow: 3,    
-              },
-              breakpoint: 0,
-              settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '30px',
-                  lidesToShow: 2,    
-              },
+              slidesToShow: 3,
+              slidesToScroll: 3
+                  }
           },
+          {
+              breakpoint: 740,
+              settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+                  }
+          },
+          
       ]
   });
 });
-
-
 
 
 
