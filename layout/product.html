@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../main.css" />
+    <link href="/dist/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .tab-button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .tab-button.active {
+            border-top-width: 2px;
+            border-color: rgb(234 179 8);
+            font-weight: 500;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="w-[1200px] m-auto">
+    <div class="grid grid-cols-2 gap-10">
+        <div>01</div>
+        <div>
+            <h1 class="uppercase text-gray-700 text-2xl font-bold">Noven</h1>
+            <div>Ghế ăn, ghế làm việc</div>
+            <div class="text-3xl">
+                742,500₫
+            </div>
+            <div class="product-description">
+                <p><strong>Kích thước: </strong><span>D47 x R53,5 x C77 cm</span></p>
+                <p><strong>Chất liệu: </strong><span>Gỗ cao su, nệm bọc vải</span></p>
+            </div>
+            <form action="/gio-hang">
+                <div>
+                    <strong>Màu sắc:</strong>
+                    <select name="colors" id="colors-select">
+                        <option value="red">Đỏ</option>
+                        <option value="black">Đen</option>
+                    </select>
+                </div>
+                <div>
+                    <strong>Số lượng:</strong>
+                    <input type="number" value="1" min="1">
+                </div>
+
+                <input type="submit" value="Thêm vào giỏ" class="cursor-pointer px-5 py-2 bg-yellow-400 my-5">
+            </form>
+        </div>
+    </div>
+
+    <div class="flex gap-5 border-t">
+        <div class="tab-button active" onclick="openTab('tab1', event)">Mô tả sản phẩm</div>
+        <div class="tab-button " onclick="openTab('tab2', event)">Hướng dẫn bảo quản</div>
+        <div class="tab-button " onclick="openTab('tab3', event)">Phí giao hàng và lắp đặt</div>
+    </div>
+
+    <div class="tab-content active" id="tab1">
+        this is tab1
+    </div>
+    <div class="tab-content" id="tab2">
+        this is tab2
+    </div>
+    <div class="tab-content" id="tab3">
+        this is tab3
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function openTab(tabId, event) {
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove('active')
+            }
+            tabButton = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButton.length; i++) {
+                tabButton[i].classList.remove('active')
+            }
+
+            document.getElementById(tabId).classList.add('active')
+            event.target.classList.add('active')
+        }
+    </script>
+</body>
+
+</html>
