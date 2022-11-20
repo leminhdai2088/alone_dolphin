@@ -11,7 +11,7 @@
     opacity: 0.6;
  }
 
-
+/* tab */
  @media(min-width: 740px) and (max-width:1023px){
    .head-footer{
       font-size: 24px;
@@ -22,6 +22,8 @@
    }
  }
 
+
+ /* mobile */
  @media (max-width: 739px){
    .footer>div{
       display: block;
