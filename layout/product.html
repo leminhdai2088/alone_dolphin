@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../main.css" />
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         .tab-button {
@@ -30,7 +31,24 @@
 
 <body class="w-[1200px] m-auto">
     <div class="grid grid-cols-2 gap-10">
-        <div>01</div>
+        <div>
+            <div class="gallery">
+                <img src="../assets/product/ghe1.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe2.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe3.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe4.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe5.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe6.webp" alt="" width="300" height="300">
+            </div>
+            <div class="gallery-slide">
+                <img src="../assets/product/ghe1.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe2.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe3.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe4.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe5.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe6.webp" alt="" width="300" height="300" class="m-3">
+            </div>
+        </div>
         <div>
             <h1 class="uppercase text-gray-700 text-2xl font-bold">Noven</h1>
             <div>Ghế ăn, ghế làm việc</div>
@@ -75,6 +93,7 @@
         this is tab3
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         function openTab(tabId, event) {
             tabcontent = document.getElementsByClassName("tab-content");
@@ -89,6 +108,25 @@
             document.getElementById(tabId).classList.add('active')
             event.target.classList.add('active')
         }
+
+        $(document).ready(function () {
+            $('.gallery').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.gallery-slide'
+            });
+            $('.gallery-slide').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '.gallery',
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true
+            });
+        });
+
     </script>
 </body>
 
