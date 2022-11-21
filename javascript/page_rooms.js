@@ -5,42 +5,74 @@ const btnPrice = document.querySelector('.price-js');
 const btnColor = document.querySelector('.color-js');
 const btnType = document.querySelector('.type-js');
 
+
+  
+
+
+function addPlusRemoveMinus(){
+
+}
+
 btnPrice.addEventListener('click',function(){
   document.querySelector('.price-choice').classList.toggle('open-filter');
-  document.querySelector('.price-js i').classList.toggle('ti-plus');
-  document.querySelector('.price-js i').classList.toggle('ti-minus');
+
+  var elementI = document.querySelector('.price-js i');
+  if(elementI){
+    elementI.classList.toggle('ti-plus');
+    elementI.classList.toggle('ti-minus');
+  }
 })
 
 btnColor.addEventListener('click',function(){
-    document.querySelector('.color-choice').classList.toggle('open-filter');
-    document.querySelector('.color-js i').classList.toggle('ti-plus');
-    document.querySelector('.color-js i').classList.toggle('ti-minus');
+  document.querySelector('.color-choice').classList.toggle('open-filter');
+
+  var elementI = document.querySelector('.color-js i');
+  if(elementI){
+    elementI.classList.toggle('ti-plus');
+    elementI.classList.toggle('ti-minus');
+  }
 })
 
 btnType.addEventListener('click',function(){
-    document.querySelector('.type-choice').classList.toggle('open-filter');
-    document.querySelector('.type-js i').classList.toggle('ti-plus');
-    document.querySelector('.type-js i').classList.toggle('ti-minus');
+  document.querySelector('.type-choice').classList.toggle('open-filter');
+
+  var elementI = document.querySelector('.type-js i');
+  if(elementI){
+    elementI.classList.toggle('ti-plus');
+    elementI.classList.toggle('ti-minus');
+  }
 })
 
 
 function closeFilterPrice(){
     document.querySelector('.price-choice').classList.remove('open-filter');
-    document.querySelector('.price-js i').classList.add('ti-plus');
-    document.querySelector('.price-js i').classList.remove('ti-minus');
+
+    var elementI = document.querySelector('.price-js i');
+    if(elementI){
+      elementI.classList.add('ti-plus');
+      elementI.classList.remove('ti-minus');
+    }
     
 }
 
 function closeFilterColor(){
     document.querySelector('.color-choice').classList.remove('open-filter');
-    document.querySelector('.color-js i').classList.add('ti-plus');
-    document.querySelector('.color-js i').classList.remove('ti-minus');
+
+    var elementI = document.querySelector('.color-js i');
+    if(elementI){
+      elementI.classList.add('ti-plus');
+      elementI.classList.remove('ti-minus');
+    }
 }
 
 function closeFilterType(){
     document.querySelector('.type-choice').classList.remove('open-filter');
-    document.querySelector('.type-js i').classList.add('ti-plus');
-    document.querySelector('.type-js i').classList.remove('ti-minus');
+
+    var elementI = document.querySelector('.type-js i');
+    if(elementI){
+      elementI.classList.add('ti-plus');
+      elementI.classList.remove('ti-minus');
+    }
 }
 
 
@@ -70,40 +102,52 @@ document.addEventListener(
   )
 
 // lọc giá tiền
-// var price = $('.price-filter .title-filter');
+var price = document.querySelector('.price-filter .title-filter');
 
 
-// var filterPrice =document.querySelectorAll('.price-choice input');
+var filterPrice =document.querySelectorAll('.price-choice input');
+var arrPrice = [];
+for(var i = 0, length = filterPrice.length; i < length; i++ ){
+  arrPrice.push(filterPrice[i]);
+
+  arrPrice[i].onclick = function(e){
+    price.innerText = e.target.value;
+  }
+}
 // for(var i of filterPrice){
 //   i.onclick= function(e){
 //     price.innerText = e.target.value;
 //   }
 // }
 
-// // lọc màu sắc
+// lọc màu sắc
 
 
-// var color = $('.color-js .title-filter');
+var color = document.querySelector('.color-js .title-filter');
 
+var filterColor =document.querySelectorAll('.color-choice input');
+var arrColor = [];
+for(var i = 0, length = filterColor.length; i < length; i++ ){
+  arrColor.push(filterColor[i]);
 
-// var filterColor =document.querySelectorAll('.color-choice input');
-// for(var i of filterColor){
-//   i.onclick= function(e){
-//     color.innerText = e.target.value;
-//   }
-// }
+  arrColor[i].onclick = function(e){
+    color.innerText = e.target.value;
+  }
+}
 
-// // lọc loại sản phẩm
+// lọc loại sản phẩm
 
-// var type = $('.type-js .title-filter');
+var type = document.querySelector('.type-js .title-filter');
 
+var filterType =document.querySelectorAll('.type-choice input');
+var arrType = [];
+for(var i = 0, length = filterType.length; i < length; i++ ){
+  arrType.push(filterType[i]);
 
-// var filterType =document.querySelectorAll('.type-choice input');
-// for(var i of filterType){
-//   i.onclick= function(e){
-//     type.innerText = e.target.value;
-//   }
-// }
+  arrType[i].onclick = function(e){
+    type.innerText = e.target.value;
+  }
+}
 
 
 
