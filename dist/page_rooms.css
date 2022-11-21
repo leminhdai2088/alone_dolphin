@@ -153,10 +153,22 @@
     margin: 46px 0;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+}
 
+.main-share{
+    width: 70%;
+}
 
+.slick-prev {
+    left: -36px !important;
+}
 
-
+.slick-next {
+    right: -36px !important;
+}
 
 
   @media(min-width: 740px) and (max-width:1023px){
@@ -204,10 +216,6 @@
 
     .filter-block {
         margin-right: 18px;
-    }
-
-    .share-you-moment{
-    margin-bottom: 0;
     }
 
   }
@@ -276,12 +284,21 @@
         font-size: 16px;
     }
 
+    /* share */
+    .row {
+        flex-wrap: wrap-reverse;
+    }
     .share-title{
         padding-top: 20px;
     }
 
-
-  }
+    .main-share {
+        margin: 0 40px;
+    }
+    .share-title{
+        margin-bottom: 20px;
+    }
+}
   /* SLICK_SLIDER */
 
 
@@ -330,12 +347,6 @@
     background-color: #676767;
     color: white;
 } */
-.slick-prev{
-    left: -20px;
-}
-.slick-next{
-    right: -20px;
-}
 button{
     cursor: pointer;
 }
