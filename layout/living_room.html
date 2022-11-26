@@ -9,24 +9,22 @@
     <link rel="stylesheet" href="../dist/header.css">
     <link rel="stylesheet" href="../dist/footer.css">
 
+    
     <link rel="stylesheet" href="../dist/page_intro.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-
+    <!-- <link rel="stylesheet" href="../dist/page_home/vendor/bootstrap.css"> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="../main.css" />
     <link href="../dist/output.css" rel="stylesheet">
     <link href="../dist/page_rooms.css" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/fb8327464e.js" crossorigin="anonymous"></script>
-   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body class="w-[1200px] m-auto">
     <!-- header -->
     
-    <div class="header fixed left-0 right-0 top-0 z-20 h-1                                                                      6">
-        <div class="w-[1200px] m-auto flex items-center justify-between">
-            <a href="#"><img height="64" width="64" src="/Alone Dolphin.png" alt="alone dolphin"></a>
+    <div class="header fixed left-0 right-0 top-0 z-20 h-16">
+        <div class="w-[1200px] m-auto flex items-center justify-between m-header">
+            <a class="logo" href="#"><img height="64" width="64" src="/Alone Dolphin.png" alt="alone dolphin"></a>
             <div class="flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="./home.html">Trang chủ</a> </div>
                 <div class="h-fit"><a href="./page_intro.html">Giới thiệu</a></div>
@@ -39,9 +37,7 @@
                                     <li>
                                         <a href="#">PHÒNG KHÁCH - living room</a>
                                         <ul class="details-menu details-living-menu">
-                                            <li>
-                                                <a href="#">COMPO PHÒNG KHÁCH</a>
-                                            </li>
+
 
                                             <li>
                                                 <a href="#">SOFA</a>
@@ -81,9 +77,7 @@
                                     <li>
                                         <a href="#">  PHÒNG NGỦ - bedroom</a>
                                         <ul class="details-menu details-bedroom-menu">
-                                            <li>
-                                                <a href="#">COMPO PHÒNG NGỦ</a>
-                                            </li>
+
 
                                             <li>
                                                 <a href="#">GIƯỜNG</a>
@@ -131,9 +125,7 @@
                                     <li>
                                         <a href="#">  BẾP & PHÒNG ĂN - kitchen room</a>
                                         <ul class="details-menu details-kitchen-menu">
-                                            <li>
-                                                <a href="#">COMBO PHÒNG ĂN</a>
-                                            </li>
+
 
                                             <li>
                                                 <a href="#">BỘ BÀN ĂN</a>
@@ -165,9 +157,7 @@
                                     <li>
                                         <a href="#">  PHÒNG LÀM VIỆC - home office</a>
                                         <ul class="details-menu details-office-menu">
-                                            <li>
-                                                <a href="#">COMBO LÀM VIỆC</a>
-                                            </li>
+
 
                                             <li>
                                                 <a href="#">BÀN</a>
@@ -238,7 +228,7 @@
 
                 <div class="h-fit">Liên hệ</div>
             </div>
-            <div class="flex gap-6">
+            <div class="right-header flex gap-6">
                 <div class="text-gray-700 relative my-auto min-w-[250px]">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
                         <button class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
@@ -277,24 +267,24 @@
     <div class="main">
         <div class="nav-room">
             <p class="direction">
-                <a href="#"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG KHÁCH - Living Room</i></a> / <span class="opacity-08">PHÒNG KHÁCH - Living Room</span>
+                <a href="./home.html"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG KHÁCH - Living Room</i></a> / <span class="opacity-08">PHÒNG KHÁCH - Living Room</span>
             </p>
             <table>
                 <tr>
-                    <td><a href="#">COMBO PHÒNG KHÁCH</a></td>
                     <td><a href="#">SOFA</a></td>
                     <td><a href="#">GHẾ ĐÔN, GHẾ BĂNG</a></td>
                     <td><a href="#">KỆ, TỦ TV</a></td>
+                    <td><a href="#">KỆ, TỦ GIÀY</a></td>
+             
                 </tr>
                 <tr>
                     <td><a href="#">ĐỒNG HỒ</a></td>
                     <td><a href="#">TRANH ẢNH</a></td>
                     <td><a href="#">GỐI TRANG TRÍ</a></td>
                     <td><a href="#">ĐÈN SÀN</a></td>
+                   
                 </tr>
-                <tr>
-                    <td><a href="#">KỆ, TỦ GIÀY</a></td>
-                </tr>
+
             </table>
         </div>
         <div class="slider">
@@ -305,30 +295,30 @@
             <div class="filter">
                 <div class="main-filter">
                     <div class="filter-block price-js">
-                         <div class="filter-item price-filter">
+                         <div class="filter-item lim-ch price-filter">
                              <span class="title-filter">
-                                 Giá
+                                Giá
                                  <i class="ti-plus"></i>
                              </span>
                              <ul class="price-choice choice">
                                 <li>
-                                    <input type="radio" name="price-choice"  id="1">
+                                    <input type="radio" name="price-choice" value="Dưới 1 triệu"  id="1">
                                     <label for="1">Dưới 1 triệu</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="price-choice" id="1-2">
+                                    <input type="radio" name="price-choice" id="1-2" value="Từ 1 - 2 triệu">
                                     <label for="1-2">Từ 1 - 2 triệu</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="price-choice" id="2-3">
+                                    <input type="radio" name="price-choice" id="2-3" value="Từ 2 - 3 triệu">
                                     <label for="2-3">Từ 2 - 3 triệu</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="price-choice" id="3-5">
+                                    <input type="radio" name="price-choice" id="3-5" value="Từ 3 - 5 triệu">
                                     <label for="3-5">Từ 3 - 5 triệu</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="price-choice" id="5">
+                                    <input type="radio" name="price-choice" id="5" value="Lớn hơn 5 triệu">
                                     <label for="5">Lớn hơn 5 triệu</label>
                                 </li>
                              </ul>
@@ -338,36 +328,36 @@
                     <div class="filter-block color-js">
                           <div class="filter-item">
                              <span class="title-filter">
-                                 Màu sắc
+                                Màu sắc
                                  <i class="ti-plus"></i>
                              </span>
                              <ul class="color-choice choice">
                                 <li>
-                                    <input type="radio" name="filter-color" id="xanh">
+                                    <input type="radio" name="filter-color" id="xanh" value="Xanh ciment">
                                     <label for="xanh">Xanh ciment</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="filter-color" id="nau">
+                                    <input type="radio" name="filter-color" id="nau" value="Nâu">
                                     <label for="nau">Nâu</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="filter-color" id="trang">
+                                    <input type="radio" name="filter-color" id="trang" value="Trắng">
                                     <label for="trang">Trắng</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="filter-color" id="be">
+                                    <input type="radio" name="filter-color" id="be" value="Be">
                                     <label for="be">Be</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="filter-color" id="xam">
+                                    <input type="radio" name="filter-color" id="xam" value="Xám">
                                     <label for="xam">Xám</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="filter-color" id="den">
+                                    <input type="radio" name="filter-color" id="den" value="Đen">
                                     <label for="den">Đen</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="filter-color" id="do">
+                                    <input type="radio" name="filter-color" id="do" value="Đỏ">
                                     <label for="do">Đỏ</label>
                                 </li>
                              </ul>
@@ -377,52 +367,52 @@
                     <div class="filter-block type-js">
                          <div class="filter-item">
                              <span class="title-filter">
-                                 Loại sản phẩm
+                                Loại sản phẩm
                                  <i class="ti-plus"></i>
                              </span>
                              <ul class="type-choice choice">
                                 <li>
-                                    <input type="radio" name="categories" id="khac">
+                                    <input type="radio" name="categories" id="khac" value="Khác">
                                     <label for="khac">Khác</label>
                                 </li>
                                 
                                 <li>
-                                    <input type="radio" name="categories" id="ke">
+                                    <input type="radio" name="categories" id="ke" value="Kệ">
                                     <label for="ke">Kệ</label>
                                 </li>
                                 
                                 <li>
-                                    <input type="radio" name="categories" id="sofa">
+                                    <input type="radio" name="categories" id="sofa" value="Sofa">
                                    <label for="sofa">Sofa</label>
                                 </li>
                                 
                                 <li>
-                                    <input type="radio" name="categories" id="tranh">
+                                    <input type="radio" name="categories" id="tranh" value="Tranh">
                                     <label for="tranh">Tranh</label>
                                 </li>
                                 
                                 <li>
-                                    <input type="radio" name="categories" id="desk">
+                                    <input type="radio" name="categories" id="desk" value="Desk">
                                     <label for="desk">Desk</label>
                                 </li>
 
                                 <li>
-                                    <input type="radio" name="categories" id="ghe">
+                                    <input type="radio" name="categories" id="ghe" value="Ghế">
                                     <label for="ghe">Ghế</label>
                                 </li>
                                 
                                 <li>
-                                    <input type="radio" name="categories" id="ban">
+                                    <input type="radio" name="categories" id="ban" value="Bàn">
                                     <label for="ban">Bàn</label>
                                 </li>
                                 
                                 <li>
-                                    <input type="radio" name="categories" id="den">
+                                    <input type="radio" name="categories" id="den" value="Đèn">
                                     <label for="den">Đèn</label>
                                 </li>
                                 
                                 <li>
-                                    <input type="radio" name="categories" id="trangtri">
+                                    <input type="radio" name="categories" id="trangtri" value="Trang trí">
                                     <label for="trangtri">Trang trí</label>
                                 </li>
                                 
@@ -691,122 +681,72 @@
             </div>
     </div>
 <!-- chia sẻ khoảnh khắc -->
-    <div class="share-you-moment">
-        <div class="col-xs-12 col-sm-9">
-            <div id="share-moment">
-                <div class="owl-stage-outer">
-                    <div class="owl-prev">
-                        <i class="fa fa-angle-left"></i>
-                    </div>
-                    <div id="img-container" class="no-scrollbar image-slider-2">
-                        <!-- add image -->
-                        <img src="../assets/img_page_intro/imgslide1.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide2.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide3.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide4.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide5.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide6.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide7.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide8.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide9.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide10.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide11.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide12.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide13.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide14.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide15.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide16.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide17.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide18.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide19.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide20.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide21.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide22.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide23.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide24.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide25.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide26.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide27.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide28.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide29.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide30.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide31.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide32.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide33.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide34.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide35.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide36.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide37.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide38.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide39.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide40.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide41.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide42.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide43.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide44.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide45.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide46.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide47.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide48.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide49.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide50.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide51.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide52.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide53.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide54.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide55.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide56.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide57.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide58.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide59.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide60.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide61.jpg" alt="">
-                        <img src="../assets/img_page_intro/imgslide62.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide63.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide64.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide65.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide66.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide67.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide68.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide69.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide70.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide71.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide72.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide73.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide74.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide75.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide76.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide77.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide78.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide79.webp" alt="">
-                        <img src="../assets/img_page_intro/imgslide80.webp" alt="">
-                    </div>
-                    <div class="owl-next">
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </div>
+<div class="container-fluid chiasekhoanhkhac">
+    <div class="row">
+      
+      <div class="main-share scol-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <div class="image-slider-2">
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh1.png" alt="">
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-            <a href="#">
-                <h3>Chia sẻ khoảng khắc</h3>
-            </a>
-        </div>
+          </div><!--end anh-->
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh2.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh3.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh4.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh5.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh6.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh7.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh8.png" alt="">
+            </div>
+          </div>
+      </div> 
+      </div> <!-- END 9 COT -->
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 share-title">
+        <h3>Chia sẻ khoảnh khắc</h3>
+      </div>
     </div>
+  </div>
 
     <!-- footer -->
     <div class=" footer h-fit pb-46">
         <div class="w-[1200px] m-auto grid grid-cols-3">
-            <div>
-                <div class="font-medium my-2">Về chúng tôi</div>
+            <div class="footer-item">
+                <div class="head-footer font-medium my-2">Về chúng tôi</div>
                 <div class="text-gray-700 text-sm">
                     <div class="footer-text"><a href="#">Project này</a></div>
                     <div class="footer-text"><a href="#">Thành viên</a></div>
                 </div>
     
             </div>
-            <div>
-                <div class="font-medium my-2">Sản phẩm</div>
+            <div class="footer-item">
+                <div class="head-footer font-medium my-2">Sản phẩm</div>
                 <div class="text-gray-700 text-sm">
                     <div class="footer-text"><a href="#">Giường</a></div>
                     <div class="footer-text"><a href="#">Bàn</a></div>
@@ -814,8 +754,8 @@
                     <div class="footer-text"><a href="#">Chăn ga gối</a></div>
                 </div>
             </div>
-            <div>
-                <div class="font-medium my-2">Liên hệ</div>
+            <div class="footer-item">
+                <div class="head-footer font-medium my-2">Liên hệ</div>
                 <div class="text-gray-700 text-sm">
                     <div class="footer-text">Sđt: 090292xxxx</div>
                     <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
@@ -829,8 +769,6 @@
                 </div>
             </div>
         </div>
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </div>
 
 
@@ -844,8 +782,10 @@
     crossorigin="anonymous" 
     referrerpolicy="no-referrer">
 </script>
-
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="../javascript/page_rooms.js"></script>
 
 </body>
