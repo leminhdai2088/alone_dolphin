@@ -17,7 +17,7 @@
     <div
         class="header fixed left-0 right-0 top-0 z-20 h-1                                                                      6">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
-            <i class="fi fi-rr-menu-burger" onclick="toggleSidebar()"></i>
+            <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/Alone Dolphin.png" alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="./home.html">Trang chủ</a> </div>
@@ -268,7 +268,7 @@
         </div>
     </div>
 
-    <div id="sidebar" class="fixed top-0 right-0 left-0 h-full w-full z-30 bg-white overflow-auto">
+    <div id="sidebar" class="hidden fixed top-0 right-0 left-0 h-full w-full z-30 bg-white overflow-auto">
         <div class="p-5 border-b-2 border-b-yellow-500 relative">
             <div class="text-center text-2xl">Menu</div>
             <div class="absolute top-7" onclick="toggleSidebar()">
