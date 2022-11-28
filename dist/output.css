@@ -847,6 +847,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -990,7 +995,25 @@ video {
     display: none;
   }
 
+  .md\:w-\[1200px\] {
+    width: 1200px;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:min-w-\[250px\] {
     min-width: 250px;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
