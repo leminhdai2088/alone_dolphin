@@ -555,15 +555,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 740px) {
   .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
+    max-width: 740px;
   }
 }
 
@@ -576,12 +570,6 @@ video {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
   }
 }
 
@@ -993,7 +981,7 @@ video {
   outline-offset: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 740px) {
   .md\:flex {
     display: flex;
   }
