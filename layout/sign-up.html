@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="../main.css" />
     <link href="/dist/output.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- header -->
-        <link rel="stylesheet" href="../assets/icon/themify-icons-font/themify-icons/themify-icons.css">
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-        <link rel="stylesheet" href="../dist/header.css">
-        <link href="/dist/page_rooms.css" rel="stylesheet">
-        <!-- header -->
+    <!-- header -->
+    <link rel="stylesheet" href="../assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="../dist/header.css">
+    <link href="/dist/page_rooms.css" rel="stylesheet">
+    <!-- header -->
     <style>
         #background-pattern {
-            height: 150px;
-            width: 1200px;
+            height: 15vh;
+            width: 100%;
             object-fit: cover;
             opacity: 0.3;
         }
@@ -35,10 +35,19 @@
             outline: none;
             border: 2px solid black;
         }
+
+        @media (min-width: 740px) {
+            #background-pattern {
+                height: 150px;
+                width: 1200px;
+                object-fit: cover;
+                opacity: 0.3;
+            }
+        }
     </style>
 </head>
 
-<body class="w-[1200px] m-auto text-gray-700">
+<body class="w-full md:w-[1200px] m-auto text-gray-700">
     <!-- header -->
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
@@ -461,22 +470,22 @@
     <div class="">
         <img src="../assets/background-pattern.jpg" alt="pattern" id="background-pattern">
     </div>
-    <div class="w-1/2 m-auto">
-        <h1 class="text-4xl text-center font-semibold my-5">Đăng ký</h1>
+    <div class="px-5 w-full md:w-1/2 m-auto">
+        <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
         <form>
             <div>
                 <label for="full-name">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
                 <input type="text" id="fname" name="full-name" required>
             </div>
-            <div class="mt-8">
+            <div class="mt-4">
                 <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
                 <input type="text" id="email" name="email" required>
             </div>
-            <div class="mt-8">
+            <div class="mt-4">
                 <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
                 <input type="password" id="password" name="password" required>
             </div>
-            <div class="mt-8">
+            <div class="mt-4">
                 <label for="confirm-password">Xác nhận mật khẩu</label><span><sup
                         class="text-red-500">*</sup></span><br>
                 <input type="password" id="confirm-password" name="confirm-password" required>
@@ -487,7 +496,7 @@
         </div>
         <div class="flex justify-center mt-8">
             <input type="submit" value="Tạo tài khoản"
-                class="px-5 py-2 bg-[#ffde59] text-black text-xl cursor-pointer m-auto">
+                class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
