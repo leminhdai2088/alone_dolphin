@@ -13,6 +13,8 @@
     <link href="/dist/page_rooms.css" rel="stylesheet">
     <!-- header -->
     <link rel="stylesheet" href="../dist/footer.css">
+    <!-- validate -->
+     <link rel="stylesheet" href="../dist/form_validate.css">
     <style>
         #background-pattern {
             height: 15vh;
@@ -473,32 +475,41 @@
     </div>
     <div class="px-5 w-full md:w-1/2 m-auto">
         <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
-        <form>
-            <div>
-                <label for="full-name">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
-                <input type="text" id="fname" name="full-name" required>
+        <form action="" method="POST" id="sign-up">
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="text" id="fullname" name="fullname">
+                <span class="form-message"></span>
             </div>
-            <div class="mt-4">
+            <div class="mt-4 form-group">
                 <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
-                <input type="text" id="email" name="email" required>
+                <input class="form-control" type="text" id="email" name="email">
+                <span class="form-message"></span>
             </div>
-            <div class="mt-4">
+            <div class="mt-4 form-group">
                 <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
-                <input type="password" id="password" name="password" required>
+                <input class="form-control" type="password" id="password" name="password">
+                <span class="form-message"></span>
             </div>
-            <div class="mt-4">
+            <div class="mt-4 form-group">
                 <label for="confirm-password">Xác nhận mật khẩu</label><span><sup
                         class="text-red-500">*</sup></span><br>
-                <input type="password" id="confirm-password" name="confirm-password" required>
+                <input class="form-control" type="password" id="confirm-password" name="confirm-password">
+                <span class="form-message"></span>
             </div>
-        </form>
+        
         <div class="mt-8">
             <a href="sign-in.html">Đã có tài khoản? Đăng nhập tại đây</a>
         </div>
         <div class="flex justify-center mt-8">
-            <input type="submit" value="Tạo tài khoản"
-                class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
+            <!-- <input type="submit" value="Tạo tài khoản"
+                class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"> -->
+
+                <button class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
+                    Tạo tài khoản 
+                </button>
         </div>
+    </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -551,6 +562,40 @@
             console.log(sidebar)
             sidebar.classList.toggle("hidden")
         }
+    </script>
+
+    <!-- form validate -->
+    <script src="../javascript/form_validate.js"></script>
+    <script>
+        Validator({
+            form: '#sign-up',
+
+            formGroup: '.form-group',
+
+            errorSelector:'.form-message',
+
+            rules:[
+            Validator.isRequired('#fullname'),
+
+            Validator.isRequired('#email'),
+
+            Validator.isEmail('#email'),
+
+            Validator.isRequired('#password'),
+
+            Validator.minLength('#password',6),
+
+            Validator.isRequired('#confirm-password'),
+
+            Validator.isConfirmed('#confirm-password',function(){
+                  return document.querySelector('#sign-up #password').value
+                },'Mật khẩu nhập lại không chính xác!'),
+            ],
+
+            onSubmit:function(data){
+              console.log(data);    
+            }
+        })
     </script>
 </body>
 
