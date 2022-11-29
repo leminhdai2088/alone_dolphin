@@ -527,9 +527,9 @@
                     <div class="px-5 collapse-section">
     
                         <div class="py-1 border-b border-b-yellow-500 text-lg">
-                            <div class="flex justify-between pr-6 content-center" onclick="handleExpand(event)">
+                            <div class="flex justify-between pr-6 content-center" >
                                 <a>PHÒNG KHÁCH - living room</a>
-                                <i class="fi fi-rr-angle-small-down"></i>
+                                <i class="fi fi-rr-angle-small-down" onclick="handleExpand2(event)"></i>
                             </div>
                             <div class="pl-5 collapse-section">
     
@@ -1221,6 +1221,11 @@
         const sidebar = document.getElementById("sidebar")
         console.log(sidebar)
         sidebar.classList.toggle("hidden")
+    }
+    function handleExpand2(event){
+        const collapsible = event.currentTarget;
+        const parent = collapsible.parentElement.parentElement;
+        parent.classList.toggle("expanded")
     }
 </script>
 </body>
