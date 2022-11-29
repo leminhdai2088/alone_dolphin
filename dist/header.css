@@ -107,6 +107,23 @@
 .header{
     background-color:white;
 }
+
+.roll-up-down {
+    transform: rotate(-180deg);
+}
+.expanded{
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.expanded>.collapse-section{
+    display:block;
+}
+.collapse-section{
+    display: none;
+}
+.expanded>div:first-child>.fi-rr-angle-small-down{
+    transform: rotate(-180deg);
+}
 @media(min-width: 740px) and (max-width:1023px){
 
     .header{
