@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../main.css" />
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- header -->
+    <link href="/dist/page_rooms.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../dist/header.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- footer -->
+    <link rel="stylesheet" href="../dist/footer.css">
+    <style>
+        .tab-button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .tab-button.active {
+            border-top-width: 2px;
+            border-color: rgb(234 179 8);
+            font-weight: 500;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="w-[1200px] m-auto">
+
+    <!-- header -->
+    <div class="header fixed left-0 right-0 top-0 z-20 h-16">
+        <div class="w-[1200px] m-auto flex items-center justify-between px-3">
+            <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
+            <a class="logo" href="#"><img height="64" width="64" src="/Alone Dolphin.png" alt="alone dolphin"></a>
+            <div class="hidden md:flex items-center gap-10 cursor-pointer">
+                <div class="h-fit"><a href="./home.html">Trang chủ</a> </div>
+                <div class="h-fit"><a href="./page_intro.html">Giới thiệu</a></div>
+                <div class="h-fit hover-product">
+                    <a href="#" class="btn-product">Sản phẩm</a>
+                    <div class="content-sub-menu">
+                        <div class="container-sub-menu w-[1200px] m-auto">
+                            <div class="sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href="./living_room.html">PHÒNG KHÁCH - living room</a>
+                                        <ul class="details-menu details-living-menu">
+
+
+                                            <li>
+                                                <a href="./list_product.html">SOFA</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GHẾ ĐÔN, GHẾ BĂNG</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ, TỦ TV</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐỒNG HỒ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">TRANH ẢNH</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GỐI TRANG TRÍ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN SÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ, TỦ GIÀY</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="./bed_room.html"> PHÒNG NGỦ - bedroom</a>
+                                        <ul class="details-menu details-bedroom-menu">
+
+
+                                            <li>
+                                                <a href="./list_product.html">GIƯỜNG</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">BỘ KỆ/TỦ QUẦN ÁO</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN SÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">BÀN TRANG ĐIỂM</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN BÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN TRANG TRÍ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">TỦ LƯU TRỮ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ/TỦ GIÀY</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GIÁ/KỆ TREO TRANG TRÍ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GƯƠNG</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="./kitchen_room.html"> BẾP & PHÒNG ĂN - kitchen room</a>
+                                        <ul class="details-menu details-kitchen-menu">
+
+
+                                            <li>
+                                                <a href="./list_product.html">BỘ BÀN ĂN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">BÀN ĂN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GHẾ ĂN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">THẢM BẾP</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ BẾP</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KHĂN BẾP</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="./home_office.html"> PHÒNG LÀM VIỆC - home office</a>
+                                        <ul class="details-menu details-office-menu">
+
+
+                                            <li>
+                                                <a href="./list_product.html">BÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GHẾ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN BÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐỒNG HỒ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">VĂN PHÒNG PHẨM</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">BẢNG TRANG TRÍ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ, TỦ LƯU TRỮ</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="./bath_room.html"> PHÒNG TẮM - bathroom</a>
+                                        <ul class="details-menu details-bath-menu">
+                                            <li>
+                                                <a href="./list_product.html">RÈM</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KHĂN TẮM</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GƯƠNG</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">THẢM CHÂN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GIÁ, KỆ, TỦ TREO</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="img-sub-menu">
+                                <a href="#"><img src="../assets/img-menu/image_menu_products.webp" alt="image menu"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-fit"><a href="#footer">Liên hệ</a></div>
+            </div>
+            <div class="right-header flex content-center gap-6">
+                <div class="text-gray-700 relative my-auto min-w-[100px] md:min-w-[250px]">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <button class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 text-[#6B7280]">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </span>
+                    <input type="search" class="
+                    w-full
+                    text-sm
+                    font-normal
+                    border
+                    pl-8
+                    pr-2
+                    h-8
+                    rounded-md
+                    bg-white
+                    text-gray-500
+                    focus:text-gray-900 focus:outline-none
+                  " placeholder="Tìm kiếm sản phẩm..." />
+                </div>
+                <!-- <a href="/profile" class="h-8 w-8">
+                    <img src="/icon/user-solid.svg" alt="" class="h-8 w-8">
+                </a>
+                <a href="/cart" class="h-8 w-8">
+                    <img src="/icon/cart-shopping-solid.svg" alt="" class="h-8 w-8">
+                </a> -->
+                <a href="/profile" class="flex items-center"><i class="fi fi-rr-user"></i></a>
+                <a href="./sign-in.html" class="flex items-center">
+                    <i class="fi fi-rr-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar" class="hidden fixed top-0 right-0 left-0 h-full w-full z-30 bg-white overflow-auto">
+        <div class="p-5 border-b-2 border-b-yellow-500 relative">
+            <div class="text-center text-2xl">Menu</div>
+            <div class="absolute top-7" onclick="toggleSidebar()">
+                <i class="fi fi-rr-cross"></i>
+            </div>
+        </div>
+        <div class="pl-7 pb-10">
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="./home.html">Trang chủ</a></div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="./page_intro.html">Giới thiệu</a></div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg expanded">
+                <div class="flex justify-between pr-3 content-center" onclick="handleExpand(event)">
+                    <a>Sản phẩm</a>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </div>
+                <div class="px-5 collapse-section">
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center" >
+                            <a href="./living_room.html">PHÒNG KHÁCH - living room</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">SOFA</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GHẾ ĐÔN, GHẾ BĂNG</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ, TỦ TV</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">TRANH ẢNH</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GỐI TRANG TRÍ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN SÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ, TỦ GIÀY</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center">
+                            <a href="./bed_room.html">PHÒNG NGỦ - bedroom</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GIƯỜNG</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BỘ KỆ/TỦ QUẦN ÁO</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN SÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BÀN TRANG ĐIỂM</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN BÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN TRANG TRÍ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">TỦ LƯU TRỮ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ/TỦ GIÀY</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GIÁ/KỆ TREO TRANG TRÍ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GƯƠNG</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center" >
+                            <a href="./kitchen_room.html">BẾP & PHÒNG ĂN - kitchen room</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BỘ BÀN ĂN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GHẾ ĂN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">THẢM BẾP</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ BẾP</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KHĂN BẾP</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center" >
+                            <a href="./home_office.html">PHÒNG LÀM VIỆC - home office</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GHẾ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN BÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐỒNG HỒ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">VĂN PHÒNG PHẨM</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BẢNG TRANG TRÍ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ, TỦ LƯU TRỮ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center">
+                            <a href="./bath_room.html">PHÒNG TẮM - bathroom</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">RÈM</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KHĂN TẮM</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GƯƠNG</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">THẢM CHÂN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GIÁ, KỆ, TỦ TREO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="#footer">Liên hệ</a></div>
+        </div>
+    </div>
+
+
+    <div class="grid grid-cols-2 gap-10">
+        <div>
+            <div class="gallery">
+                <img src="../assets/product/ghe1.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe2.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe3.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe4.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe5.webp" alt="" width="300" height="300">
+                <img src="../assets/product/ghe6.webp" alt="" width="300" height="300">
+            </div>
+            <div class="gallery-slide">
+                <img src="../assets/product/ghe1.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe2.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe3.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe4.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe5.webp" alt="" width="300" height="300" class="m-3">
+                <img src="../assets/product/ghe6.webp" alt="" width="300" height="300" class="m-3">
+            </div>
+        </div>
+        <div>
+            <h1 class="uppercase text-gray-700 text-2xl font-bold">Noven</h1>
+            <div>Ghế ăn, ghế làm việc</div>
+            <div class="text-3xl">
+                742,500₫
+            </div>
+            <div class="product-description">
+                <p><strong>Kích thước: </strong><span>D47 x R53,5 x C77 cm</span></p>
+                <p><strong>Chất liệu: </strong><span>Gỗ cao su, nệm bọc vải</span></p>
+            </div>
+            <form action="/gio-hang">
+                <div>
+                    <strong>Màu sắc:</strong>
+                    <select name="colors" id="colors-select">
+                        <option value="red">Đỏ</option>
+                        <option value="black">Đen</option>
+                    </select>
+                </div>
+                <div>
+                    <strong>Số lượng:</strong>
+                    <input type="number" value="1" min="1">
+                </div>
+
+                <input type="submit" value="Thêm vào giỏ" class="cursor-pointer px-5 py-2 bg-yellow-400 my-5">
+            </form>
+        </div>
+    </div>
+
+    <div class="flex gap-5 border-t">
+        <div class="tab-button active" onclick="openTab('tab1', event)">Mô tả sản phẩm</div>
+        <div class="tab-button " onclick="openTab('tab2', event)">Hướng dẫn bảo quản</div>
+        <div class="tab-button " onclick="openTab('tab3', event)">Phí giao hàng và lắp đặt</div>
+    </div>
+
+    <div class="tab-content active" id="tab1">
+        this is tab1
+    </div>
+    <div class="tab-content" id="tab2">
+        this is tab2
+    </div>
+    <div class="tab-content" id="tab3">
+        this is tab3
+    </div>
+
+        <!-- footer -->
+        <div id="footer" class=" footer h-fit pb-46">
+            <div class="w-[1200px] m-auto grid grid-cols-3">
+                <div class="footer-item">
+                    <div class="head-footer font-medium my-2">Về chúng tôi</div>
+                    <div class="text-gray-700 text-sm">
+                        <div class="footer-text"><a href="#">Project này</a></div>
+                        <div class="footer-text"><a href="#">Thành viên</a></div>
+                    </div>
+        
+                </div>
+                <div class="footer-item">
+                    <div class="head-footer font-medium my-2">Sản phẩm</div>
+                    <div class="text-gray-700 text-sm">
+                        <div class="footer-text"><a href="#">Giường</a></div>
+                        <div class="footer-text"><a href="#">Bàn</a></div>
+                        <div class="footer-text"><a href="#">Ghế</a></div>
+                        <div class="footer-text"><a href="#">Chăn ga gối</a></div>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="head-footer font-medium my-2">Liên hệ</div>
+                    <div class="text-gray-700 text-sm">
+                        <div class="footer-text">Sđt: 090292xxxx</div>
+                        <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
+                        <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
+                        <div class="link flex gap-5 mt-2">
+                            <a href="#"><img src="/icon/facebook.svg" alt="" height="30" width="30"></a>
+                            <a href="#"><img src="/icon/youtube.svg" alt="" height="30" width="30"></a>
+                            <a href="#"><img src="/icon/behance.svg" alt="" height="30" width="30"></a>
+                            <a href="#"><img src="/icon/wordpress.svg" alt="" height="30" width="30"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        function openTab(tabId, event) {
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove('active')
+            }
+            tabButton = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButton.length; i++) {
+                tabButton[i].classList.remove('active')
+            }
+
+            document.getElementById(tabId).classList.add('active')
+            event.target.classList.add('active')
+        }
+
+        $(document).ready(function () {
+            $('.gallery').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.gallery-slide'
+            });
+            $('.gallery-slide').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '.gallery',
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true
+            });
+        });
+
+    </script>
+
+
+<!-- header -->
+
+<script>
+    function handleExpand(event) {
+        const collapsible = event.currentTarget;
+        const parent = collapsible.parentElement;
+        parent.classList.toggle("expanded")
+    }
+
+    function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar")
+        console.log(sidebar)
+        sidebar.classList.toggle("hidden")
+    }
+</script>
+</body>
+
+</html>

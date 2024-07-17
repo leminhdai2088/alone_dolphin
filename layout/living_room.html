@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../dist/header.css">
+    <link rel="stylesheet" href="../dist/footer.css">
+
+    
+    <link rel="stylesheet" href="../dist/page_intro.css">
+    <!-- <link rel="stylesheet" href="../dist/page_home/vendor/bootstrap.css"> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="../main.css" />
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../dist/page_rooms.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- header -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+
+<body class="w-[1200px] m-auto">
+    <!-- header -->
+    
+    <div class="header fixed left-0 right-0 top-0 z-20 h-16">
+        <div class="w-[1200px] m-auto flex items-center justify-between px-3">
+            <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
+            <a class="logo" href="#"><img height="64" width="64" src="/Alone Dolphin.png" alt="alone dolphin"></a>
+            <div class="hidden md:flex items-center gap-10 cursor-pointer">
+                <div class="h-fit"><a href="./home.html">Trang chủ</a> </div>
+                <div class="h-fit"><a href="./page_intro.html">Giới thiệu</a></div>
+                <div class="h-fit hover-product">
+                    <a href="#" class="btn-product">Sản phẩm</a>
+                    <div class="content-sub-menu">
+                        <div class="container-sub-menu w-[1200px] m-auto">
+                            <div class="sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href="./living_room.html">PHÒNG KHÁCH - living room</a>
+                                        <ul class="details-menu details-living-menu">
+
+
+                                            <li>
+                                                <a href="./list_product.html">SOFA</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GHẾ ĐÔN, GHẾ BĂNG</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ, TỦ TV</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐỒNG HỒ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">TRANH ẢNH</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GỐI TRANG TRÍ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN SÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ, TỦ GIÀY</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="./bed_room.html"> PHÒNG NGỦ - bedroom</a>
+                                        <ul class="details-menu details-bedroom-menu">
+
+
+                                            <li>
+                                                <a href="./list_product.html">GIƯỜNG</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">BỘ KỆ/TỦ QUẦN ÁO</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN SÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">BÀN TRANG ĐIỂM</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN BÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN TRANG TRÍ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">TỦ LƯU TRỮ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ/TỦ GIÀY</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GIÁ/KỆ TREO TRANG TRÍ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GƯƠNG</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="./kitchen_room.html"> BẾP & PHÒNG ĂN - kitchen room</a>
+                                        <ul class="details-menu details-kitchen-menu">
+
+
+                                            <li>
+                                                <a href="./list_product.html">BỘ BÀN ĂN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">BÀN ĂN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GHẾ ĂN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">THẢM BẾP</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ BẾP</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KHĂN BẾP</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="./home_office.html"> PHÒNG LÀM VIỆC - home office</a>
+                                        <ul class="details-menu details-office-menu">
+
+
+                                            <li>
+                                                <a href="./list_product.html">BÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GHẾ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐÈN BÀN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">ĐỒNG HỒ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">VĂN PHÒNG PHẨM</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">BẢNG TRANG TRÍ</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KỆ, TỦ LƯU TRỮ</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="./bath_room.html"> PHÒNG TẮM - bathroom</a>
+                                        <ul class="details-menu details-bath-menu">
+                                            <li>
+                                                <a href="./list_product.html">RÈM</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">KHĂN TẮM</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GƯƠNG</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">THẢM CHÂN</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./list_product.html">GIÁ, KỆ, TỦ TREO</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="img-sub-menu">
+                                <a href="#"><img src="../assets/img-menu/image_menu_products.webp" alt="image menu"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-fit"><a href="#footer">Liên hệ</a></div>
+            </div>
+            <div class="right-header flex content-center gap-6">
+                <div class="text-gray-700 relative my-auto min-w-[100px] md:min-w-[250px]">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <button class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 text-[#6B7280]">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </span>
+                    <input type="search" class="
+                    w-full
+                    text-sm
+                    font-normal
+                    border
+                    pl-8
+                    pr-2
+                    h-8
+                    rounded-md
+                    bg-white
+                    text-gray-500
+                    focus:text-gray-900 focus:outline-none
+                  " placeholder="Tìm kiếm sản phẩm..." />
+                </div>
+                <!-- <a href="/profile" class="h-8 w-8">
+                    <img src="/icon/user-solid.svg" alt="" class="h-8 w-8">
+                </a>
+                <a href="/cart" class="h-8 w-8">
+                    <img src="/icon/cart-shopping-solid.svg" alt="" class="h-8 w-8">
+                </a> -->
+                <a href="/profile" class="flex items-center"><i class="fi fi-rr-user"></i></a>
+                <a href="./sign-in.html" class="flex items-center">
+                    <i class="fi fi-rr-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar" class="hidden fixed top-0 right-0 left-0 h-full w-full z-30 bg-white overflow-auto">
+        <div class="p-5 border-b-2 border-b-yellow-500 relative">
+            <div class="text-center text-2xl">Menu</div>
+            <div class="absolute top-7" onclick="toggleSidebar()">
+                <i class="fi fi-rr-cross"></i>
+            </div>
+        </div>
+        <div class="pl-7 pb-10">
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="./home.html">Trang chủ</a></div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="./page_intro.html">Giới thiệu</a></div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg expanded">
+                <div class="flex justify-between pr-3 content-center" onclick="handleExpand(event)">
+                    <a>Sản phẩm</a>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </div>
+                <div class="px-5 collapse-section">
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center" >
+                            <a href="./living_room.html">PHÒNG KHÁCH - living room</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">SOFA</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GHẾ ĐÔN, GHẾ BĂNG</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ, TỦ TV</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">TRANH ẢNH</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GỐI TRANG TRÍ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN SÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ, TỦ GIÀY</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center">
+                            <a href="./bed_room.html">PHÒNG NGỦ - bedroom</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GIƯỜNG</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BỘ KỆ/TỦ QUẦN ÁO</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN SÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BÀN TRANG ĐIỂM</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN BÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN TRANG TRÍ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">TỦ LƯU TRỮ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ/TỦ GIÀY</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GIÁ/KỆ TREO TRANG TRÍ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GƯƠNG</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center" >
+                            <a href="./kitchen_room.html">BẾP & PHÒNG ĂN - kitchen room</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BỘ BÀN ĂN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GHẾ ĂN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">THẢM BẾP</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ BẾP</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KHĂN BẾP</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center" >
+                            <a href="./home_office.html">PHÒNG LÀM VIỆC - home office</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GHẾ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐÈN BÀN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">ĐỒNG HỒ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">VĂN PHÒNG PHẨM</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">BẢNG TRANG TRÍ</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KỆ, TỦ LƯU TRỮ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center">
+                            <a href="./bath_room.html">PHÒNG TẮM - bathroom</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">RÈM</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">KHĂN TẮM</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GƯƠNG</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">THẢM CHÂN</a>
+                            </div>
+                            <div class="flex justify-start gap-4 content-center">
+                                <a href="./list_product.html">GIÁ, KỆ, TỦ TREO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="#footer">Liên hệ</a></div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <div class="nav-room">
+            <p class="direction">
+                <a href="./home.html"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG KHÁCH - Living Room</i></a> / <span class="opacity-08">PHÒNG KHÁCH - Living Room</span>
+            </p>
+            <table>
+                <tr>
+                    <td><a href="./list_product.html    ">SOFA</a></td>
+                    <td><a href="./list_product.html    ">GHẾ ĐÔN, GHẾ BĂNG</a></td>
+                    <td><a href="./list_product.html    ">KỆ, TỦ TV</a></td>
+                    <td><a href="./list_product.html    ">KỆ, TỦ GIÀY</a></td>
+             
+                </tr>
+                <tr>
+                    <td><a href="./list_product.html    ">ĐỒNG HỒ</a></td>
+                    <td><a href="./list_product.html    ">TRANH ẢNH</a></td>
+                    <td><a href="./list_product.html    ">GỐI TRANG TRÍ</a></td>
+                    <td><a href="./list_product.html    ">ĐÈN SÀN</a></td>
+                   
+                </tr>
+
+            </table>
+        </div>
+        <div class="slider">
+            <h1 class="text-center">PHÒNG KHÁCH - Living Room</h1>
+            <img src="../assets/Living_Room_img/slider.webp" alt="">
+        </div>
+        
+            <div class="filter">
+                <div class="main-filter">
+                    <div class="filter-block price-js">
+                         <div class="filter-item lim-ch price-filter">
+                             <span class="title-filter">
+                                Giá
+                                 <i class="ti-plus"></i>
+                             </span>
+                             <ul class="price-choice choice">
+                                <li>
+                                    <input type="radio" name="price-choice" value="Dưới 1 triệu"  id="1">
+                                    <label for="1">Dưới 1 triệu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price-choice" id="1-2" value="Từ 1 - 2 triệu">
+                                    <label for="1-2">Từ 1 - 2 triệu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price-choice" id="2-3" value="Từ 2 - 3 triệu">
+                                    <label for="2-3">Từ 2 - 3 triệu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price-choice" id="3-5" value="Từ 3 - 5 triệu">
+                                    <label for="3-5">Từ 3 - 5 triệu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="price-choice" id="5" value="Lớn hơn 5 triệu">
+                                    <label for="5">Lớn hơn 5 triệu</label>
+                                </li>
+                             </ul>
+                         </div>
+                    </div>
+     
+                    <div class="filter-block color-js">
+                          <div class="filter-item">
+                             <span class="title-filter">
+                                Màu sắc
+                                 <i class="ti-plus"></i>
+                             </span>
+                             <ul class="color-choice choice">
+                                <li>
+                                    <input type="radio" name="filter-color" id="xanh" value="Xanh ciment">
+                                    <label for="xanh">Xanh ciment</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="nau" value="Nâu">
+                                    <label for="nau">Nâu</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="trang" value="Trắng">
+                                    <label for="trang">Trắng</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="be" value="Be">
+                                    <label for="be">Be</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="xam" value="Xám">
+                                    <label for="xam">Xám</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="den" value="Đen">
+                                    <label for="den">Đen</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="filter-color" id="do" value="Đỏ">
+                                    <label for="do">Đỏ</label>
+                                </li>
+                             </ul>
+                     </div>
+                    </div>
+     
+                    <div class="filter-block type-js">
+                         <div class="filter-item">
+                             <span class="title-filter">
+                                Loại sản phẩm
+                                 <i class="ti-plus"></i>
+                             </span>
+                             <ul class="type-choice choice">
+                                <li>
+                                    <input type="radio" name="categories" id="khac" value="Khác">
+                                    <label for="khac">Khác</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="ke" value="Kệ">
+                                    <label for="ke">Kệ</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="sofa" value="Sofa">
+                                   <label for="sofa">Sofa</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="tranh" value="Tranh">
+                                    <label for="tranh">Tranh</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="desk" value="Desk">
+                                    <label for="desk">Desk</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="categories" id="ghe" value="Ghế">
+                                    <label for="ghe">Ghế</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="ban" value="Bàn">
+                                    <label for="ban">Bàn</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="den" value="Đèn">
+                                    <label for="den">Đèn</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="radio" name="categories" id="trangtri" value="Trang trí">
+                                    <label for="trangtri">Trang trí</label>
+                                </li>
+                                
+                             </ul>
+                         </div>
+                    </div>
+                </div>
+
+
+               <div class="sort">
+                    <span class="amount-items">300 sản phẩm</span>
+                    <select name="" id="" class="sort-by">
+                        <option value="" selected>Sort by</option>
+                        <option value="">Mới nhất</option>
+                        <option value="">Giá tăng dần</option>
+                        <option value="">Giá giảm dần</option>
+                        <option value="">Tên: A - Z</option>
+                        <option value="">Tên: Z - A</option>
+                    </select>
+               </div>
+            </div>
+
+            
+<!-- grid items -->
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                       <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                       <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                       <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-item">
+                    <a href="#"><img src="../assets/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <div class="text-items">
+                        <a href="#"><h3 class="name-item">ABS</h3></a>
+                        <p class="desc-item">Tranh 50*70cm</p>
+                        <p class="price-item">590,000đ</p>
+                    </div>
+                </div>
+
+
+            </div>
+    </div>
+<!-- chia sẻ khoảnh khắc -->
+<div class="container-fluid chiasekhoanhkhac">
+    <div class="row">
+      
+      <div class="main-share scol-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <div class="image-slider-2">
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh1.png" alt="">
+            </div>
+          </div><!--end anh-->
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh2.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh3.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh4.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh5.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh6.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh7.png" alt="">
+            </div>
+          </div>
+          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="image-2">
+              <img src="../assets/img_home/chiasekhoanhkhac/anh8.png" alt="">
+            </div>
+          </div>
+      </div> 
+      </div> <!-- END 9 COT -->
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 share-title">
+        <h3>Chia sẻ khoảnh khắc</h3>
+      </div>
+    </div>
+  </div>
+
+    <!-- footer -->
+    <div id="footer" class=" footer h-fit pb-46">
+        <div class="w-[1200px] m-auto grid grid-cols-3">
+            <div class="footer-item">
+                <div class="head-footer font-medium my-2">Về chúng tôi</div>
+                <div class="text-gray-700 text-sm">
+                    <div class="footer-text"><a href="#">Project này</a></div>
+                    <div class="footer-text"><a href="#">Thành viên</a></div>
+                </div>
+    
+            </div>
+            <div class="footer-item">
+                <div class="head-footer font-medium my-2">Sản phẩm</div>
+                <div class="text-gray-700 text-sm">
+                    <div class="footer-text"><a href="#">Giường</a></div>
+                    <div class="footer-text"><a href="#">Bàn</a></div>
+                    <div class="footer-text"><a href="#">Ghế</a></div>
+                    <div class="footer-text"><a href="#">Chăn ga gối</a></div>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="head-footer font-medium my-2">Liên hệ</div>
+                <div class="text-gray-700 text-sm">
+                    <div class="footer-text">Sđt: 090292xxxx</div>
+                    <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
+                    <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
+                    <div class="link flex gap-5 mt-2">
+                        <a href="#"><img src="/icon/facebook.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="/icon/youtube.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="/icon/behance.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="/icon/wordpress.svg" alt="" height="30" width="30"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal -->
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+</script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="../javascript/page_rooms.js"></script>
+
+
+<!-- header -->
+<script>
+    function handleExpand(event) {
+        const collapsible = event.currentTarget;
+        const parent = collapsible.parentElement;
+        parent.classList.toggle("expanded")
+    }
+
+    function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar")
+        console.log(sidebar)
+        sidebar.classList.toggle("hidden")
+    }
+</script>
+
+</body>
+
+</html>

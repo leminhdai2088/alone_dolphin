@@ -1,0 +1,274 @@
+
+.slideshow-content div.slideshow-list-products li{
+    width: 40%;
+    height: 330px;
+    border: 1px solid black;
+    display: inline-block;
+}
+.slideshow-content h2{
+    font-size: 20px;
+}
+.slideshow-content div.slideshow-list-products li img{
+    height: 15rem;
+    width: auto;
+}
+.home-middle-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.home-middle-photo-glass{
+    width: 100%;
+}
+.home-middle-container div.slideshow-list-products{
+    width: 100%;
+    border: 1px solid black;
+    padding: 40px 20px;
+    
+}
+.home-middle-container div.slideshow-list-products h2{
+    margin-bottom: 0px;
+    padding-left: 30px;
+    color: #676767;
+    font-weight: bold;
+    font-size: 20px;
+}
+.home-middle-container div.slideshow-list-products li{
+    padding: 30px;
+    text-align: left;
+}
+.home-middle-container div.slideshow-list-products img{
+    display: inline;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+.home-middle-container div.slideshow-list-products li p{
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    font-weight: 500;
+}
+.slideshow-content div.img-product{
+    width: 100%;
+    padding: 40px 20px;
+    border: 1px solid black;
+}
+/* ROW-CONTENT */
+.row-content{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.row-content div.content-concept h3{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* SLICK_SLIDER */
+.share-moment{
+    margin: 0 20px;
+    padding: 0 20px;
+}
+.image-item-1 h4{
+    font-size: 22px;
+    color: #676767;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+}
+.image-1 {
+    height: 365px;
+    margin-bottom: 20px;
+}
+.image-1 img{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+.slick-initialized .slick-slide{
+    margin: 0 10px;
+}
+.slick-arrow{
+    /* abs-centery */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 50px;
+    height: 50px;
+    /* flex-center */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    line-height: 1;
+    z-index: 5;
+    color: #676767;
+    /* tsall */
+    transition: all 0.2s linear;
+}
+/* .slick-arrow:hover{
+    background-color: #676767;
+    color: white;
+} */
+.slick-prev{
+    left: -20px;
+}
+.slick-next{
+    right: -20px;
+}
+button{
+    cursor: pointer;
+}
+.body-4-anh img{
+    max-width: 100%;
+
+}
+.image-items-2{
+    padding: 0px !important;
+}
+.body-4-anh{
+    margin-top: 50px;   
+}
+
+/* about-us */
+.about-us{
+    margin-top: 30px;
+    text-align: left;
+    color: #676767;
+}
+.about-us-content{
+    line-height: 27px;
+}
+.about-us-content div.about-content p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.about-us h3{
+    font-size: 30px;
+    color: #676767;
+    font-style: normal;
+    font-weight: bold;
+}
+.about-us-img{
+    padding: 0px !important;
+}
+/* content body 2 */
+.content-body-23{
+    margin: 40px 0;
+}
+.content-body-2 h3.first::after{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    content: '';
+    background: #ffe600;
+    border-radius: 50%;
+    left: 0px;
+    top: 10px;
+    opacity: 0.6;
+    z-index: -1;
+}
+.content-body-2 h3.first{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.content-body-2{
+    text-align: left;
+    color: #676767;
+    font-size: 16px;
+}
+.content-body-3 h3{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #676767;
+}
+.content-body-3 h4{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #676767;
+}
+
+/* CHIA SE KHOANH KHAC */
+.chiasekhoanhkhac{
+    margin: 60px 0;
+}
+.chiasekhoanhkhac .share-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #676767;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    padding: 102px 0;
+}
+.chiasekhoanhkhac .share-title h3{
+    font-weight: bold;
+}
+.danhmucsanpham div{
+    margin-bottom: 40px;
+}
+.slideshow-content-1{
+    margin-top: 40px;
+    text-align: left;
+}
+.slideshow-content-1 p{
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+    font-weight: 500;
+    color: #676767;
+}
+.slideshow-content-1 .danhmuc2 div{
+    margin-bottom: 30px;
+}
+
+.nivo-controlNav .nivo-control{
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+    margin: 0px 6px;
+}
+.nivo-controlNav .nivo-control.active{
+    background-color: #222;
+}
+.nivo-controlNav{
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    z-index: 10;
+}
+.nivo-directionNav a:before {
+    font-family: "FontAwesome";
+    font-size: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    color: #ccc !important;
+    font-weight: bold;
+    text-align: center;
+}
+.nivo-arrow{
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 35px;
+    color: #676767;
+}

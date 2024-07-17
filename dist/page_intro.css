@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: fit-content;
+}
+/* @font-face {
+    font-family: Montserrat;
+    src: url("D:Extract-site\Montserrat-Light.otf");
+} */
+body{
+    font-family: segoe ui;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+}
+body:before, body:after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    top: 0;
+    left: 0;
+}
+
+/* main */
+img {
+    max-width: 100%;
+}
+.main-content{
+
+    width: 100%;
+    height: 100%;
+    /* font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.25px; */
+    outline: none !important;
+    background-color: #fff;
+    color: #545454;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+.background-image-heading{
+    position: relative;
+    top: 64px;
+    background-image: url(../assets/img_page_intro/header_bg.webp);
+    background-repeat: repeat;
+    background-size: auto;
+    width: 100%;
+    min-height: 273px;
+    background-position: center;
+    margin-bottom: 64px;
+}
+.header-background-info > h2 {
+    position: absolute;
+    bottom: 47px;
+    left: 168px;
+}
+.noidung{
+    display: flex;
+    max-width: 100%;
+    height: fit-content;
+}
+.col-md-8 {
+    margin-left: 30px;
+    flex:2;
+}
+.col-md-8 ._about p{
+    text-align: justify;
+    margin: 10px 0;
+}
+.col-md-4 {
+    flex: 1;
+    align-self: center;
+}
+
+::selection {
+    color: #fff;
+    background: #a8a88f;
+}
+.parallax{
+    padding-top: 500px;
+    padding-bottom: 500px;
+    background-image: url(../assets/img_page_intro/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.iconbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 85px;
+}
+.iconbox .iconbox-title .icon{
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.iconbox .iconbox-title {
+    width: 30%;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+.nr_line{
+    border-width: 1px 0 0px;
+    margin: 35px auto;
+    width: 100%;
+    display: inline-block;
+    border-style: solid;
+    color: #eee;
+}
+.title-ourteam{
+    text-align: center;
+    margin: 40px 0;
+}
+.ourteam {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+.ourteam .nr-ourteams{
+    width: 31%;
+}
+.ourteam .nr-ourteams figure{
+    overflow: hidden;
+}
+.ourteam .nr-ourteams figure img{
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    transform: scale(1);
+}
+.ourteam .nr-ourteams:hover figure img{
+    transform: scale(1.1);
+}
+.ourteam .nr-ourteams .ourteams-text{
+    margin: 30px 0;
+}
+.section-iconboxes-contact{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.ts-address .list-info{
+    padding-left: 0px;
+}
+.ts-time .list-info{
+    list-style-type: square;
+    padding-left: 16px;
+}
+.contact-info{
+    flex: 1;
+    margin-right: 60px;
+}
+.contact-map{
+    flex: 2;
+}
+.share-you-moment{
+    display: flex;
+    /* zoom: 1; */
+    margin: auto;
+    margin-bottom: 35px;
+    width: 100%;
+}
+.col-sm-9{
+    flex: 2;
+}
+.col-sm-3{
+    flex: 1;
+}
+.owl-stage-outer{
+    margin-left: 20px;
+}
+/* .no-scrollbar::-webkit-scrollbar{
+    display: none;
+} */
+.img-container{
+    display: grid !important;
+    grid-template-columns: auto auto auto auto;
+    cursor: grab;
+}
+.image-slider-2{
+    margin: 0 5px;
+}
+.image-slider-2 img{
+    object-fit: cover;
+}
+.owl-prev, .owl-next{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: #a5a0a0;
+    font-size: 30px;
+    position: relative ;
+    top: 40%;
+}
+.owl-next{
+    right: -10px;
+}
+.col-sm-3 h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #676767;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+/* Responsive */
+@media(min-width: 740px) and (max-width: 1023px){
+    h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 19px;
+        font-weight: bold;
+    }
+    iframe {
+        width: 100% !important;
+    }
+    .owl-prev, .owl-next{
+        font-size: 30px;
+        top: 35%;
+    }
+    .col-sm-3 h3{
+        top: 20%;
+    }
+}
+@media(max-width: 740px){
+    h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .background-image-heading{
+        min-height: 150px;
+    }
+    .header-background-info > h2{
+        left: 50px;
+    }
+    .noidung{
+        display: block;
+        padding: 50px 15px;
+        padding-left: 0;
+       
+    }
+    .col-md-8 {
+        margin-left: 15px;
+    }
+    .parallax{
+        width: 100% !important;
+    }
+    .iconbox{
+        display: block;
+    }
+    .iconbox .iconbox-title {
+        width: 100%;
+        margin: 30px 0;
+    }
+    .ourteam{
+        display: block;
+    }
+    .ourteam .nr-ourteams{
+        width: 100%;
+    }
+    .section-iconboxes-contact{
+        display: block;
+        width: 100%;
+    }
+    .contact-info{
+        margin: 5px 15px;
+    }
+    iframe {
+        width: 100% !important;
+    }
+    .owl-prev, .owl-next{
+        font-size: 20px;
+        top: 35%;
+    }
+    .owl-prev{
+        left: 7px;
+    }
+    .col-sm-3 h3{
+        top: 35%;
+        padding-right: 5px;
+        font-size: 20px;
+    }
+}

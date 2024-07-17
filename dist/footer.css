@@ -1,0 +1,44 @@
+.pb-46{
+    padding-bottom: 46px;
+ }
+
+ .footer-text{
+    margin: 12px 0;
+    font-size: 16px;
+ }
+
+ .footer .link a:hover{
+    opacity: 0.6;
+ }
+
+ .head-footer{
+   font-weight: bold !important;
+ }
+
+/* tab */
+ @media(min-width: 740px) and (max-width:1023px){
+   .head-footer{
+      font-size: 24px;
+   }
+
+   .footer-text{
+      font-size: 20px;
+   }
+ }
+
+
+ /* mobile */
+ @media (max-width: 739px){
+   .footer>div{
+      display: block;
+  }
+
+  .footer-item+.footer-item{
+      margin-top: 32px;
+  
+  }
+
+  .footer-text {
+      margin: 10px;
+  }
+ }
